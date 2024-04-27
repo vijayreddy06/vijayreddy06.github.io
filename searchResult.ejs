@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search student information</title>
+</head>
+
+<body>
+    <h1>Search student information</h1>
+
+    <% if(count == 0) { %>
+        <h3>No such student found</h3>
+    <% } else { %>
+        <h3>Search student ID: <%= data.StudentID %></h3>
+        <h3>Search student first name: <%= data.FirstName %></h3>
+        <h3>Search student last name: <%= data.LastName %></h3>
+        <h3>Search student gender: <%= data.Gender %></h3>
+        <h3>Search student email: <%= data.Email %></h3>
+        <h3>Search student street name: <%= data.StreetName %></h3>
+        <h3>Search student zip code: <%= data.ZipCode %></h3>
+        <h3>Search student state: <%= data.State %></h3>
+        <h3>Search student country: <%= data.Country %></h3>
+        <h3>Search student DOB: <%= data.DOB %></h3>
+        <h3>Search student age: <%= data.Age %></h3>
+        <h3>Search student contact number: <%= data.ContactNumber %></h3>
+        <h3>Search student email address: <%= data.EmailAddress %></h3>
+    <% } %>
+
+    <form action="/search" method="post">
+        <label for="id">Student ID:</label>
+        <input type="number" name="id" id="id" placeholder="Enter student ID">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><a href="http://localhost:8080/">|Go home|</a></p>
+</body>
+
+</html>

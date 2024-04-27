@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The number of students in the student table is: <%=count%></h1>
+
+    <form action="/register" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="John"><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Doe"><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" id="gender" placeholder="Male/Female/Other"><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@example.com"><br>
+        
+        <label for="streetName">Street Name:</label>
+        <input type="text" name="streetName" id="streetName" placeholder="123 Main St"><br>
+        
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" name="zipCode" id="zipCode" placeholder="12345"><br>
+        
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" placeholder="California"><br>
+        
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" placeholder="USA"><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob"><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="25"><br>
+        
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" name="contactNumber" id="contactNumber" placeholder="123-456-7890"><br>
+        
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" name="emailAddress" id="emailAddress" placeholder="example@example.com"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><a href="http://localhost:8080/">|Go home|</a></p>
+</body>
+
+</html>

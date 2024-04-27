@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students information</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Students information</h1>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Street Name</th>
+            <th>Zip Code</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>DOB</th>
+            <th>Age</th>
+            <th>Contact Number</th>
+            <th>Email Address</th>
+        </tr>
+        <% data.forEach(student => { %>
+            <tr>
+                <td><%= student.StudentID %></td>
+                <td><%= student.FirstName %></td>
+                <td><%= student.LastName %></td>
+                <td><%= student.Gender %></td>
+                <td><%= student.Email %></td>
+                <td><%= student.StreetName %></td>
+                <td><%= student.ZipCode %></td>
+                <td><%= student.State %></td>
+                <td><%= student.Country %></td>
+                <td><%= student.DOB %></td>
+                <td><%= student.Age %></td>
+                <td><%= student.ContactNumber %></td>
+                <td><%= student.EmailAddress %></td>
+            </tr>
+        <% }) %>
+    </table>
+    <p><a href="http://localhost:8080/">|Go home|</a></p>
+</body>
+
+</html>
